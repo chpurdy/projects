@@ -1,4 +1,6 @@
+#! /usr/bin/python
 # A program to create the header of a new blog post for a Jekyll blog
+
 import time
 
 def main():
@@ -7,7 +9,7 @@ def main():
 	desc = input('Description: ')
 	pl = input('Permalink: /')
 
-	filename = file + '.md'
+	filename = '/home/chad/Webpages/chpurdy.github.io/_posts/' + file + '.md'
 	f = open(filename,"w+")
 
 	f.write('---\n')
